@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 public class Solution2 {
 
@@ -19,6 +20,8 @@ public class Solution2 {
 
     public static void main(String[] args){
         int [] result = Solution2.twoSum(new int[]{2,7,11,15}, 13);
+        List<Integer> list =Arrays.asList(1,2,3,4);
+        list.stream().filter(number-> number % 2==0);
         System.out.println(Arrays.toString(result));
     }
 }
