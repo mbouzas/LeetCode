@@ -25,17 +25,13 @@ public class LongestString {
             int ext = extracted(charList, result, counter, count);
             j++;
             charList = charList.subList(1,charList.size());
-
-
         }
         return Collections.max(counter);
     }
 
     private static int  extracted(List<Character> charList, Integer result, List<Integer> counter, Map<Character, Integer> count) {
         for ( Character c : charList){
-
             if (count.containsKey(c)){
-
                 counter.add(result);
                 break;
             }
